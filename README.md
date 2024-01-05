@@ -61,5 +61,5 @@ Namespaces are one honking great idea – let’s do more of those.
     * FastAPI
 
 > Python is not just a language, it's a community where developers can learn, collaborate and create wonders.
-i> Guido van Rossum
+> Guido van Rossum
                             Happy Coding 2024 :metal: :octocat:
