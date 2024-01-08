@@ -11,13 +11,10 @@ print("Welcome to the PyPassword Generator!")
 user_letters = random.randint(1, 5)
 user_numbers = random.randint(1, 5)
 user_symbols = random.randint(1, 5)
-# Generating sub-password according to users number of digits they want to be in their password
 for i in range(0, user_letters):
     full_password.append(random.choice(letters))
-# Generating sub-password according to users number of digits they want to be in their password
 for i in range(0, user_numbers):
     full_password.append(random.choice(numbers))
-# Generating sub-password according to users number of symbols they want to be in their password
 for i in range(0, user_symbols):
     full_password.append(random.choice(symbols))
 random.shuffle(full_password)
