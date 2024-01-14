@@ -3,3 +3,5 @@ Python is one of the most popular, flexible programming languages today. You can
 In the Scientific Computing with Python Certification, you'll learn Python fundamentals like variables, loops, conditionals, and functions. Then you'll quickly ramp up to complex data structures, networking, relational databases, and data visualization.
 1. cipher_generator.py - In this project, you'll learn fundamental programming concepts in Python, such as variables, functions, loops, and conditional statements.
 2. luhn_algorithm.py - The Luhn Algorithm is widely used for error-checking in various applications, such as verifying credit card numbers.By building this project, you'll gain experience working with numerical computations and string manipulation.
+3. lambda.py - Lambda functions give you a concise way to write small, throwaway functions in your code.In this project, you'll explore the power of Lambda Functions by creating an expense tracker. Your resulting app will demonstrate how you can use Lambda Functions for efficient, streamlined operations.
+4. 
