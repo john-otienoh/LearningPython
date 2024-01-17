@@ -4,4 +4,5 @@ In the Scientific Computing with Python Certification, you'll learn Python funda
 1. cipher_generator.py - In this project, you'll learn fundamental programming concepts in Python, such as variables, functions, loops, and conditional statements.
 2. luhn_algorithm.py - The Luhn Algorithm is widely used for error-checking in various applications, such as verifying credit card numbers.By building this project, you'll gain experience working with numerical computations and string manipulation.
 3. lambda.py - Lambda functions give you a concise way to write small, throwaway functions in your code.In this project, you'll explore the power of Lambda Functions by creating an expense tracker. Your resulting app will demonstrate how you can use Lambda Functions for efficient, streamlined operations.
-4. 
+4. list_comprehension.py - List Comprehension is a way to construct a new Python list from an iterable types: lists, tuples, and strings. All without using a for loop or the `.append()` list method.In this project, you'll write a program that takes a string formatted in Camel Case or Pascal Case, then converts it into Snake Case.The project has two phases: first you'll use a for loop to implement the program. Then you'll learn how to use List Comprehension instead of a loop to achieve the same results.
+5. 
