@@ -61,6 +61,8 @@ root.title('Pomodoro')
 root.config(bg=YELLOW, padx=50, pady=50)
 
 canvas = Canvas(width=200, height=224,bg=YELLOW, highlightthickness=0)
+tomato_image = PhotoImage(file='tomato.png')
+canvas.create_image(100, 112, image=tomato_image)
 canvas_text = canvas.create_text(103, 112, text='00:00', fill='black', font=(FONT_NAME, 35, 'bold'))
 
 timer_label = Label(text='TIMER', font=(FONT_NAME, 35),fg=GREEN, bg=YELLOW)
