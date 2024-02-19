@@ -4,6 +4,7 @@ import re
 import secrets
 import string
 import pyperclip
+import json
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 def generate_password(length=16, nums=1, special_chars=1, uppercase=1, lowercase=1): 
     # Define the possible characters for the password
@@ -36,14 +37,21 @@ def generate_password(length=16, nums=1, special_chars=1, uppercase=1, lowercase
 
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 def save():
+    new_data = {
+        website.get(): {
+            'email': email.get(),
+            'password': password.get(),
+        }
+    }
     if len(website.get()) == 0 or len(password.get()) == 0:
         messagebox.showinfo(title='Oops', message='PLease fill all empty fields')   
     else:
-        is_ok = messagebox.askokcancel(title=website.get(), message=f'These are your details\nEmail: {email.get()}\nPassword: {password.get()}')
-
-    if is_ok:
-        with open('data.txt', 'a') as data_file:
-            data_file.write(f'\n{website.get()} | {email.get()} | {password.get()}')
+        with open('data.json', 'r') as data_file:
+            data = json.load(data_file)
+            data.update(new_data)
+        with open('data.json', 'w') as data_file:
+            json.dump(new_data, data_file, indent=4)
+            
             website.delete(0, END)
             password.delete(0, END)
         
